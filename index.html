@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cover Buku Digital Responsive</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+}
+
+/* =========================
+   COVER
+========================= */
+
+.cover{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+
+    background:
+    linear-gradient(rgba(15,23,42,.82),rgba(15,23,42,.88)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow:hidden;
+}
+
+/* EFEK BACKGROUND */
+
+.circle1{
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#7c3aed;
+    border-radius:50%;
+    top:-120px;
+    left:-120px;
+    opacity:.25;
+    filter:blur(50px);
+}
+
+.circle2{
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#4f46e5;
+    border-radius:50%;
+    bottom:-100px;
+    right:-100px;
+    opacity:.25;
+    filter:blur(50px);
+}
+
+/* CARD */
+
+.cover-box{
+    width:100%;
+    max-width:950px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:30px;
+    padding:60px;
+
+    text-align:center;
+    color:white;
+
+    position:relative;
+    z-index:2;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.35);
+
+    animation:fadeUp 1s ease;
+}
+
+/* ICON */
+
+.book-icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+/* TITLE */
+
+.cover-box h1{
+    font-size:58px;
+    line-height:1.2;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+/* SUBTITLE */
+
+.cover-box p{
+    font-size:20px;
+    line-height:1.9;
+    opacity:.92;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.btn-start{
+    display:inline-block;
+    text-decoration:none;
+
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+
+    color:white;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-start:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 10px 25px rgba(124,58,237,.45);
+}
+
+/* AUTHOR */
+
+.author{
+    margin-top:40px;
+    font-size:15px;
+    opacity:.8;
+    letter-spacing:1px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+    .cover-box{
+        padding:45px 35px;
+    }
+
+    .cover-box h1{
+        font-size:44px;
+    }
+
+    .cover-box p{
+        font-size:18px;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .cover{
+        padding:25px 15px;
+    }
+
+    .cover-box{
+        padding:35px 25px;
+        border-radius:22px;
+    }
+
+    .book-icon{
+        font-size:55px;
+    }
+
+    .cover-box h1{
+        font-size:34px;
+    }
+
+    .cover-box p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .btn-start{
+        width:100%;
+        padding:16px;
+        font-size:16px;
+    }
+
+    .author{
+        font-size:13px;
+    }
+
+}
+
+/* =========================
+   HP KECIL
+========================= */
+
+@media(max-width:480px){
+
+    .cover-box h1{
+        font-size:28px;
+    }
+
+    .cover-box p{
+        font-size:15px;
+    }
+
+    .book-icon{
+        font-size:48px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="cover">
+
+    <!-- BACKGROUND EFFECT -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!-- CONTENT -->
+    <div class="cover-box">
+
+        <div class="book-icon">
+            🎨
+        </div>
+
+        <h1>
+            Multimedia Desain Grafis <br>
+            Menggunakan CorelDRAW
+        </h1>
+
+        <p>
+            Buku digital interaktif pembelajaran desain grafis 
+            yang membahas multimedia, CorelDRAW, tools, tipografi, 
+            warna, layout, latihan interaktif, dan evaluasi pembelajaran.
+        </p>
+
+        <a href="materi.html" class="btn-start">
+            📘 Mulai Membaca
+        </a>
+
+        <div class="author">
+            © 2026 Materi Multimedia Desain Grafis
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

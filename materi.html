@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Materi Multimedia Desain Grafis CorelDRAW</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/* NAVBAR */
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:9999;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    list-style:none;
+    padding:15px;
+    gap:10px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    background:#eef2ff;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:.3s;
+    font-size:14px;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    background:#4f46e5;
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* CONTENT */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section{
+    background:white;
+    margin-bottom:30px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    scroll-margin-top:120px;
+}
+
+section:hover{
+    transform:translateY(-4px);
+}
+
+h2{
+    color:#4f46e5;
+    margin-bottom:15px;
+    border-left:6px solid #7c3aed;
+    padding-left:15px;
+}
+
+h3{
+    margin-top:15px;
+    color:#444;
+}
+
+p{
+    line-height:1.8;
+}
+
+ul,ol{
+    margin-left:20px;
+    line-height:1.9;
+}
+
+/* IMAGE */
+.section-image{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:18px;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#4f46e5;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* QUIZ */
+.quiz-box{
+    background:#f9fafb;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:15px;
+    border:1px solid #ddd;
+}
+
+.quiz-box p{
+    margin-bottom:12px;
+    font-weight:600;
+}
+
+.quiz-box label{
+    display:block;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.quiz-box label:hover{
+    color:#4f46e5;
+}
+
+.btn-submit{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.btn-submit:hover{
+    transform:translateY(-2px);
+}
+
+#hasil{
+    margin-top:25px;
+    padding:25px;
+    border-radius:15px;
+    background:#eef2ff;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* FOOTER */
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    nav ul{
+        justify-content:flex-start;
+        overflow-x:auto;
+        flex-wrap:nowrap;
+    }
+
+    section{
+        padding:20px;
+        scroll-margin-top:140px;
+    }
+
+    .section-image{
+        height:220px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎨 Multimedia Desain Grafis Menggunakan CorelDRAW</h1>
+    <p>Materi Pembelajaran Desain Grafis untuk Multimedia</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#pengertian">Pengertian</a></li>
+<li><a href="#fungsi">Fungsi</a></li>
+<li><a href="#coreldraw">CorelDRAW</a></li>
+<li><a href="#interface">Interface</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#vektorbitmap">Vektor & Bitmap</a></li>
+<li><a href="#warna">Warna</a></li>
+<li><a href="#tipografi">Tipografi</a></li>
+<li><a href="#layout">Layout</a></li>
+<li><a href="#langkah">Langkah</a></li>
+<li><a href="#produk">Produk</a></li>
+<li><a href="#shortcut">Shortcut</a></li>
+<li><a href="#kelebihan">Kelebihan</a></li>
+<li><a href="#latihanpg">Latihan</a></li>
+<li><a href="#evaluasi">Evaluasi</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<!-- PENGERTIAN -->
+<section id="pengertian">
+<h2>1. Pengertian Multimedia Desain Grafis</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+
+<p>
+Multimedia desain grafis merupakan perpaduan berbagai media seperti teks, gambar, audio, video, animasi, dan elemen visual lainnya untuk menyampaikan informasi secara efektif dan menarik. Desain grafis sendiri berfungsi sebagai media komunikasi visual yang memanfaatkan unsur warna, tipografi, ilustrasi, dan tata letak agar pesan lebih mudah dipahami oleh audiens (Dewojati, 2009). Sementara itu, multimedia diartikan sebagai penggunaan kombinasi beberapa media digital yang terintegrasi untuk meningkatkan interaktivitas dan daya tarik penyampaian informasi (Ariani, 2010). Oleh karena itu, multimedia desain grafis banyak diterapkan dalam bidang pendidikan, periklanan, media sosial, dan industri kreatif karena mampu menyajikan informasi secara lebih komunikatif dan estetis. Peradaban manusia modern tampaknya memang makin sulit dipisahkan dari tampilan visual bergerak. Tulisan biasa dianggap terlalu damai untuk era yang hidupnya ditopang notifikasi dan scrolling tanpa akhir.
+</p>
+</section>
+
+<!-- FUNGSI -->
+<section id="fungsi">
+<h2>2. Fungsi dan Manfaat Desain Grafis</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
+
+<ul>
+<li>📢 Media komunikasi visual</li>
+<li>🛍 Media promosi produk</li>
+<li>📚 Media pembelajaran</li>
+<li>📰 Media informasi</li>
+</ul>
+</section>
+
+<!-- COREL -->
+<section id="coreldraw">
+<h2>3. Pengenalan CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop">
+
+<p>
+CorelDRAW adalah software desain grafis berbasis vektor yang digunakan untuk membuat logo, poster, banner, brosur, ilustrasi, dan berbagai media visual lainnya.
+</p>
+</section>
+
+<!-- INTERFACE -->
+<section id="interface">
+<h2>4. Antarmuka CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop">
+
+<ul>
+<li>Title Bar</li>
+<li>Menu Bar</li>
+<li>Toolbox</li>
+<li>Property Bar</li>
+<li>Color Palette</li>
+<li>Drawing Area</li>
+<li>Status Bar</li>
+</ul>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+<h2>5. Tools pada CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop">
+
+<h3>🖱 Pick Tool</h3>
+<p>Digunakan untuk memilih dan memindahkan objek.</p>
+
+<h3>✏ Shape Tool</h3>
+<p>Digunakan untuk mengedit bentuk objek.</p>
+
+<h3>⬛ Rectangle Tool</h3>
+<p>Membuat persegi atau persegi panjang.</p>
+
+<h3>⭕ Ellipse Tool</h3>
+<p>Membuat lingkaran atau oval.</p>
+
+<h3>🔤 Text Tool</h3>
+<p>Untuk membuat teks.</p>
+
+<h3>🎨 Fill Tool</h3>
+<p>Memberi warna pada objek.</p>
+</section>
+
+<!-- VEKTOR -->
+<section id="vektorbitmap">
+<h2>6. Gambar Vektor dan Bitmap</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=1200&auto=format&fit=crop">
+
+<h3>Vektor</h3>
+<p>Tidak pecah saat diperbesar karena berbasis garis dan kurva.</p>
+
+<h3>Bitmap</h3>
+<p>Dapat pecah saat diperbesar karena tersusun dari piksel.</p>
+</section>
+
+<!-- WARNA -->
+<section id="warna">
+<h2>7. Teori Warna</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop">
+
+<ul>
+<li>RGB (Red, Green, Blue)</li>
+<li>CMYK (Cyan, Magenta, Yellow, Black)</li>
+<li>Warna Primer</li>
+<li>Warna Sekunder</li>
+</ul>
+</section>
+
+<!-- TIPOGRAFI -->
+<section id="tipografi">
+<h2>8. Tipografi dalam Desain</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop">
+
+<p>
+Tipografi adalah seni mengatur tulisan agar mudah dibaca dan memiliki nilai estetika.
+</p>
+</section>
+
+<!-- LAYOUT -->
+<section id="layout">
+<h2>9. Layout dan Komposisi</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop">
+
+<ul>
+<li>Balance (Keseimbangan)</li>
+<li>Contrast (Kontras)</li>
+<li>Alignment (Perataan)</li>
+<li>Hierarchy (Hierarki Visual)</li>
+</ul>
+</section>
+
+<!-- LANGKAH -->
+<section id="langkah">
+<h2>10. Langkah Membuat Desain di CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop">
+
+<ol>
+<li>Membuka aplikasi CorelDRAW</li>
+<li>Membuat dokumen baru</li>
+<li>Menentukan ukuran halaman</li>
+<li>Membuat objek</li>
+<li>Menambahkan teks</li>
+<li>Mewarnai desain</li>
+<li>Menyimpan file</li>
+<li>Export PNG/JPG/PDF</li>
+</ol>
+</section>
+
+<!-- PRODUK -->
+<section id="produk">
+<h2>11. Produk Desain Menggunakan CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop">
+
+<ul>
+<li>Logo</li>
+<li>Poster</li>
+<li>Banner</li>
+<li>Brosur</li>
+<li>Spanduk</li>
+<li>Kartu Nama</li>
+</ul>
+</section>
+
+<!-- SHORTCUT -->
+<section id="shortcut">
+<h2>12. Shortcut Keyboard CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop">
+
+<table>
+<tr>
+<th>Shortcut</th>
+<th>Fungsi</th>
+</tr>
+
+<tr>
+<td>Ctrl + N</td>
+<td>Dokumen Baru</td>
+</tr>
+
+<tr>
+<td>Ctrl + S</td>
+<td>Menyimpan File</td>
+</tr>
+
+<tr>
+<td>Ctrl + Z</td>
+<td>Undo</td>
+</tr>
+
+<tr>
+<td>Ctrl + G</td>
+<td>Group Object</td>
+</tr>
+</table>
+</section>
+
+<!-- KELEBIHAN -->
+<section id="kelebihan">
+<h2>13. Kelebihan dan Kekurangan CorelDRAW</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop">
+
+<h3>✅ Kelebihan</h3>
+<ul>
+<li>Mudah digunakan</li>
+<li>Cocok untuk desain vektor</li>
+<li>Fitur lengkap</li>
+</ul>
+
+<h3>❌ Kekurangan</h3>
+<ul>
+<li>Berbayar</li>
+<li>Membutuhkan spesifikasi tertentu</li>
+</ul>
+</section>
+
+<!-- LATIHAN -->
+<section id="latihanpg">
+<h2>14. Latihan Pilihan Ganda Interaktif</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop">
+
+<form id="quizForm">
+
+<!-- SOAL 1 -->
+<div class="quiz-box">
+<p>1. CorelDRAW merupakan software desain grafis berbasis....</p>
+
+<label><input type="radio" name="q1" value="10"> A. Vektor</label>
+<label><input type="radio" name="q1" value="0"> B. Bitmap</label>
+<label><input type="radio" name="q1" value="0"> C. Audio</label>
+<label><input type="radio" name="q1" value="0"> D. Video</label>
+</div>
+
+<!-- SOAL 2 -->
+<div class="quiz-box">
+<p>2. Pick Tool digunakan untuk....</p>
+
+<label><input type="radio" name="q2" value="10"> A. Memilih objek</label>
+<label><input type="radio" name="q2" value="0"> B. Menghapus objek</label>
+<label><input type="radio" name="q2" value="0"> C. Memotong gambar</label>
+<label><input type="radio" name="q2" value="0"> D. Menambahkan efek suara</label>
+</div>
+
+<!-- SOAL 3 -->
+<div class="quiz-box">
+<p>3. RGB biasanya digunakan untuk media....</p>
+
+<label><input type="radio" name="q3" value="10"> A. Digital</label>
+<label><input type="radio" name="q3" value="0"> B. Percetakan</label>
+<label><input type="radio" name="q3" value="0"> C. Banner kain</label>
+<label><input type="radio" name="q3" value="0"> D. Fotokopi</label>
+</div>
+
+<!-- SOAL 4 -->
+<div class="quiz-box">
+<p>4. Ctrl + S berfungsi untuk....</p>
+
+<label><input type="radio" name="q4" value="10"> A. Menyimpan file</label>
+<label><input type="radio" name="q4" value="0"> B. Membuka file</label>
+<label><input type="radio" name="q4" value="0"> C. Menghapus file</label>
+<label><input type="radio" name="q4" value="0"> D. Menutup aplikasi</label>
+</div>
+
+<!-- SOAL 5 -->
+<div class="quiz-box">
+<p>5. Bitmap tersusun dari....</p>
+
+<label><input type="radio" name="q5" value="10"> A. Piksel</label>
+<label><input type="radio" name="q5" value="0"> B. Garis</label>
+<label><input type="radio" name="q5" value="0"> C. Kurva</label>
+<label><input type="radio" name="q5" value="0"> D. Node</label>
+</div>
+
+<!-- SOAL 6 -->
+<div class="quiz-box">
+<p>6. Fill Tool digunakan untuk....</p>
+
+<label><input type="radio" name="q6" value="10"> A. Memberi warna</label>
+<label><input type="radio" name="q6" value="0"> B. Menghapus objek</label>
+<label><input type="radio" name="q6" value="0"> C. Menambahkan audio</label>
+<label><input type="radio" name="q6" value="0"> D. Mengatur printer</label>
+</div>
+
+<!-- SOAL 7 -->
+<div class="quiz-box">
+<p>7. Tipografi adalah seni mengatur....</p>
+
+<label><input type="radio" name="q7" value="10"> A. Tulisan</label>
+<label><input type="radio" name="q7" value="0"> B. Musik</label>
+<label><input type="radio" name="q7" value="0"> C. Video</label>
+<label><input type="radio" name="q7" value="0"> D. Animasi</label>
+</div>
+
+<!-- SOAL 8 -->
+<div class="quiz-box">
+<p>8. CMYK digunakan untuk media....</p>
+
+<label><input type="radio" name="q8" value="10"> A. Percetakan</label>
+<label><input type="radio" name="q8" value="0"> B. Monitor</label>
+<label><input type="radio" name="q8" value="0"> C. Audio</label>
+<label><input type="radio" name="q8" value="0"> D. Website</label>
+</div>
+
+<!-- SOAL 9 -->
+<div class="quiz-box">
+<p>9. Rectangle Tool digunakan untuk membuat....</p>
+
+<label><input type="radio" name="q9" value="10"> A. Persegi panjang</label>
+<label><input type="radio" name="q9" value="0"> B. Lingkaran</label>
+<label><input type="radio" name="q9" value="0"> C. Kurva</label>
+<label><input type="radio" name="q9" value="0"> D. Spiral</label>
+</div>
+
+<!-- SOAL 10 -->
+<div class="quiz-box">
+<p>10. Salah satu produk desain grafis adalah....</p>
+
+<label><input type="radio" name="q10" value="10"> A. Poster</label>
+<label><input type="radio" name="q10" value="0"> B. Speaker</label>
+<label><input type="radio" name="q10" value="0"> C. CPU</label>
+<label><input type="radio" name="q10" value="0"> D. Keyboard</label>
+</div>
+
+<!-- SOAL 11 -->
+<div class="quiz-box">
+<p>11. Shortcut Ctrl + Z digunakan untuk....</p>
+
+<label><input type="radio" name="q11" value="10"> A. Undo</label>
+<label><input type="radio" name="q11" value="0"> B. Save</label>
+<label><input type="radio" name="q11" value="0"> C. Copy</label>
+<label><input type="radio" name="q11" value="0"> D. Paste</label>
+</div>
+
+<!-- SOAL 12 -->
+<div class="quiz-box">
+<p>12. Ellipse Tool digunakan untuk membuat....</p>
+
+<label><input type="radio" name="q12" value="10"> A. Lingkaran</label>
+<label><input type="radio" name="q12" value="0"> B. Persegi</label>
+<label><input type="radio" name="q12" value="0"> C. Garis</label>
+<label><input type="radio" name="q12" value="0"> D. Segitiga</label>
+</div>
+
+<!-- SOAL 13 -->
+<div class="quiz-box">
+<p>13. Alignment berarti....</p>
+
+<label><input type="radio" name="q13" value="10"> A. Perataan</label>
+<label><input type="radio" name="q13" value="0"> B. Penghapusan</label>
+<label><input type="radio" name="q13" value="0"> C. Pencetakan</label>
+<label><input type="radio" name="q13" value="0"> D. Pemotongan</label>
+</div>
+
+<!-- SOAL 14 -->
+<div class="quiz-box">
+<p>14. CorelDRAW cocok digunakan untuk desain....</p>
+
+<label><input type="radio" name="q14" value="10"> A. Vektor</label>
+<label><input type="radio" name="q14" value="0"> B. Musik</label>
+<label><input type="radio" name="q14" value="0"> C. Film</label>
+<label><input type="radio" name="q14" value="0"> D. Audio</label>
+</div>
+
+<!-- SOAL 15 -->
+<div class="quiz-box">
+<p>15. Shape Tool digunakan untuk....</p>
+
+<label><input type="radio" name="q15" value="10"> A. Mengedit bentuk objek</label>
+<label><input type="radio" name="q15" value="0"> B. Menyimpan file</label>
+<label><input type="radio" name="q15" value="0"> C. Membuka file</label>
+<label><input type="radio" name="q15" value="0"> D. Menambahkan suara</label>
+</div>
+
+<button type="button" onclick="hitungNilai()" class="btn-submit">
+Kumpulkan Jawaban
+</button>
+
+</form>
+
+<div id="hasil"></div>
+
+</section>
+
+<!-- EVALUASI -->
+<section id="evaluasi">
+<h2>15. Evaluasi</h2>
+
+<img class="section-image"
+src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop">
+
+<ol>
+<li>Apa fungsi Pick Tool?</li>
+<li>Jelaskan perbedaan vektor dan bitmap!</li>
+<li>Apa fungsi CMYK?</li>
+<li>Sebutkan 3 produk desain grafis!</li>
+</ol>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Materi Multimedia Desain Grafis - CorelDRAW</p>
+</footer>
+
+<script>
+
+function hitungNilai(){
+
+    let total = 0;
+
+    for(let i = 1; i <= 15; i++){
+
+        let jawaban = document.querySelector('input[name="q'+i+'"]:checked');
+
+        if(jawaban){
+            total += parseInt(jawaban.value);
+        }
+    }
+
+    let grade = "";
+
+    if(total >= 140){
+        grade = "A - Sangat Baik";
+    }
+    else if(total >= 110){
+        grade = "B - Baik";
+    }
+    else if(total >= 80){
+        grade = "C - Cukup";
+    }
+    else{
+        grade = "D - Perlu Belajar Lagi";
+    }
+
+    document.getElementById("hasil").innerHTML = `
+        🎯 Nilai Anda
+        <br><br>
+
+        <span style="font-size:45px; color:#4f46e5; font-weight:bold;">
+            ${total}
+        </span>
+
+        <br><br>
+
+        Predikat: ${grade}
+    `;
+}
+
+</script>
+
+</body>
+</html>
